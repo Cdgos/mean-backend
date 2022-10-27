@@ -4,10 +4,17 @@ const cors = require("cors");
 
 //Creamos el servidor
 const app = express();
+app.disable("x-powered-by"); //Solución
 
 // Conectamos a la BD
 conectarDB();
-app.use(cors());
+
+let corsOptions = {
+    origin: 'https://mean-frontend.vercel.app/' 
+  };
+  
+app.use(cors(corsOptions));
+
 
 app.use(express.json());
 
