@@ -10,8 +10,8 @@ app.disable("x-powered-by"); //Solución
 conectarDB();
 
 let corsOptions = {
-    origin: 'https://mean-frontend.vercel.app/' 
-  };
+  origin: 'https://mean-frontend.vercel.app/' 
+};
   
 app.use(cors(corsOptions));
 
@@ -20,6 +20,6 @@ app.use(express.json());
 
 app.use('/api/productos', require('./routes/producto'));
 
-app.listen(process.env.PORT || 3000, () =>{
-    console.log('El servidor está corriendo perfectamente')
+app.listen(process.env.PORT || 3000, () => {
+
 })

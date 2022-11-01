@@ -14,7 +14,7 @@ exports.crearProducto = async (req, res) => {
         res.send(producto);
 
     }catch(error){
-        console.log(error);
+
         res.status(500).send('Hubo un error');
     }
 }
@@ -27,7 +27,7 @@ exports.obtenerProductos = async (req, res) => {
         res.json(productos)
 
     }catch(error){
-        console.log(error);
+
         res.status(500).send('Hubo un error');
     }
 
@@ -54,7 +54,7 @@ exports.actualizarProducto = async (req, res) => {
         res.json(producto);
 
     }catch(error){
-        console.log(error);
+
         res.status(500).send('Hubo un error');
     }
 }
@@ -72,7 +72,7 @@ exports.obtenerProducto = async (req, res) => {
         res.json(producto);
 
     }catch(error){
-        console.log(error);
+
         res.status(500).send('Hubo un error');
     }
 }
@@ -92,7 +92,7 @@ exports.eliminarProducto = async (req, res) => {
         res.json({msg: 'Producto eliminado correctamente'});
 
     }catch(error){
-        console.log(error);
+
         res.status(500).send('Hubo un error');
     }
 }
