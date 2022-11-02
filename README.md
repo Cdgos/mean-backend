@@ -139,28 +139,10 @@ El servidor escuchará en el puerto 3000 segun está especificado en el archivo 
 ```
 
 ## BD
-Ahora que tenemos las dependencias instaladas vamos a montar una base de datos local :sparkles:
+La base de datos de desarrollo es no relacional y se encuentra alojada en la nube en un cluster de MongoDB.
 
-Debes tener instalado MySql para montar la bd de la siguiente manera
-- Nos desplazamos a la carpeta database en donde se encuentra el script para crear la base de datos y las tablas en local
-- Lo siguiente sera crear en la raiz del proyecto un archivo ``` .env.local ``` 
-- Añadimos en este archivo las credenciales de la base de datos en local que creamos de la siguiente manera
+La cadena de conexión a la BD se encuentra especificada en la variable de entorno DB_MONGO del archivo variables.env.
 
-```bash
-  DB_HOST=tu_host
-  DB_USER=tu_usuario
-  DB_PASS=tu_contraseña
-  DB_NAME=tu_nombredebasededatos
-  DB_PORT=tu_puertodebd
-```
-y ya tenemos todo listo :+1: .
+Si desea utilizar su propia BD de mongo, debe crear su propio cluster, BD y la collection producto y cambiar dichos valores junto con las credenciales de usuario en la variable DB_MONGO. Para más información sobre como crear una BD en mongoDB puede seguir los pasos de la documentación oficial:
 
-Esto nos dejara el proyecto en local listo para ser ejecutado en localhost, ahora vamos a ejecutarlo con el siguiente comando
-
-```bash
-yarn dev
-```
-abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado :fire:.
-
-Puedes comenzar a hacer modificaciones al archivo `pages/index.js`. La pagina deberia auto-recargarse cada vez que realices un cambio en el archivo.
-
+- [Documentation](https://www.mongodb.com/docs/atlas/create-connect-deployments/)
