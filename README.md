@@ -6,7 +6,6 @@ Esta es una aplicacion desarrollada con el framework [Express.js](https://expres
 Dado que es una aplicacion desarrollada con el framework Express.js necesitas unos prerrequisitos antes de correrla en local :face_in_clouds:
 
 - NodeJS :white_check_mark:	
-- Express js :white_check_mark:	
 
 ## Node
 Para instalar NodeJs se debe descargar desde su web oficial en el siguiente enlace
@@ -19,7 +18,7 @@ Una vez instalado Node puede proceder a clonar el proyecto e instalar sus depend
 Se debe clonar el repositorio con su terminal para tenerlo en local :upside_down_face: con :
 
 ```bash
-git clone https://github.com/crist1114/nextjs-productos.git
+https://github.com/Cdgos/mean-backend
 ```
 - En la terminal nos desplazamos a la carpeta que acabamos de clonar y ejecutamos el siguiente comando para instalar todas las librerias necesarias para correr la app
 ```bash
@@ -28,11 +27,10 @@ yarn install
 
 ## Instalar dependencias
 
-Para instalar next js ejecuta el siguiente comando en la consola :point_down:	
+Para instalar las dependencias del proyecto, ubicandose en la raíz del mismo, solo basta correr el siguiente comando en la terminal de comandos :point_down:	
 ```bash
-npm i next@latest react@latest react-dom@latest eslint-config-next@latest
+npm install
 ``` 
-
 
 ## BD
 Ahora que tenemos las dependencias instaladas vamos a montar una base de datos local :sparkles:
